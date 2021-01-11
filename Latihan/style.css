@@ -21,6 +21,44 @@ header {
     padding: 40px 0;
 }
 
+.content {
+    display: flex;
+}
+
+/* .content::after { */
+    /* content: ''; */
+    /* display: block; */
+    /* clear: both; */
+/* } */
+
+.sidebar {
+    flex: 1;
+    /* float: left; */
+    /* width: 40%; */
+}
+
+.sidebar aside {
+    background-color: #2F93FF;
+    padding: 60px 0;
+}
+
+.sidebar nav {
+    background-color: #E45765;
+    padding: 100px 0;
+}
+
+main {
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E8AA77;
+    padding: 171.5px;
+    /* float: right; */
+    box-sizing: border-box;
+    /* width: 60%; */
+}
+
 footer {
     background-color: #666;
     padding: 20px 0;
