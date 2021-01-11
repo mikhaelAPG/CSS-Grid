@@ -14,16 +14,27 @@ body, html {
     border: 5px solid #333;
     box-sizing: border-box;
     padding: 5px;
+    display: grid;
+    grid-template-areas: "header header"
+    "aside main"
+    "nav main"
+    "footer footer";
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1.3fr;
 }
 
 header {
+    grid-area: header;
     background-color: #B063D8;
-    padding: 40px 0;
+    /* padding: 40px 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.content {
-    display: flex;
-}
+/* .content { */
+    /* display: flex; */
+/* } */
 
 /* .content::after { */
     /* content: ''; */
@@ -31,23 +42,26 @@ header {
     /* clear: both; */
 /* } */
 
-.sidebar {
-    flex: 1;
+/* .sidebar { */
+    /* flex: 1; */
     /* float: left; */
     /* width: 40%; */
-}
+/* } */
 
-.sidebar aside {
+aside {
+    grid-area: aside;
     background-color: #2F93FF;
     padding: 60px 0;
 }
 
-.sidebar nav {
+nav {
+    grid-area: nav;
     background-color: #E45765;
     padding: 100px 0;
 }
 
 main {
+    grid-area: main;
     flex: 1.5;
     display: flex;
     justify-content: center;
@@ -60,6 +74,7 @@ main {
 }
 
 footer {
+    grid-area: footer;
     background-color: #666;
     padding: 20px 0;
 }
