@@ -8,14 +8,17 @@ html, body {
     width: 60%;
     margin: 50px auto;
     display: grid;
-    grid-template-columns: 100px 58px;
+    grid-template: [baris-mulai] 'header header header'
+    50px [baris1-akhir baris2-mulai] 'footer footer footer'
+    100px [baris2-akhir] / 1fr 2fr 3fr;
+    /* grid-template-columns: 100px 58px; */
     /* grid-auto-columns: 200px; ga mungkin ada column yang implisit, karena kalay ada lebih column dia turun jadi baris*/
     /* grid-template-rows: 50px 100px 150px; */
     /* grid-auto-rows: 200px; */
     /* grid-auto-flow: column;  mengatur penempatan item pada tracknya, ditulis secara implisit*/
-    grid-auto-flow: column;
-    grid-template-rows: 50px 30px;
-    grid-auto-columns: 200px; 
+    /* grid-auto-flow: column; */
+    /* grid-template-rows: 50px 30px; */
+    /* grid-auto-columns: 200px;  */
     
 }
 
