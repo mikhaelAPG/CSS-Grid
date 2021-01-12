@@ -9,6 +9,7 @@ html, body {
     width: 60%;
     margin: 50px auto;
     display: grid;
+    grid-template-columns: 1fr minmax(200px, 300px) 1fr;
     /* grid-template-columns: repeat(auto-fill, 100px) auto-fill --> secara auto menentukan kolom yang ada dalam wadah, ditentukan akhirnya dimana, auto-fit --> sama aja, perbedaannya ketika itemnya lebih sedikit dari lebar container, akan berada di akhir */
     /* grid-template-columns: 1fr max-content 1fr; min-content --> tulisannya akan dipecah menjadi tiap tiap kata dan akan dicari mana yang paling panjang, max-content --> ambil seluruh katanya */
     /* grid-template-columns: repeat(4, 1fr) repeat(5, 1.5fr); */
